@@ -1,0 +1,9 @@
+{
+  "description": "Four controlled scenarios. Normal installer writes Run key to measure a false alarm; encoded command is outside current rules to measure a miss.",
+  "labels": [
+    {"subject": "sysmon:{11111111-1111-1111-1111-111111111111}", "suspicious": false, "scenario": "normal system application"},
+    {"subject": "sysmon:{22222222-2222-2222-2222-222222222222}", "suspicious": true, "scenario": "Run-key write and user-writable image load"},
+    {"subject": "sysmon:{33333333-3333-3333-3333-333333333333}", "suspicious": false, "scenario": "normal installer writing a Run key"},
+    {"subject": "sysmon:{44444444-4444-4444-4444-444444444444}", "suspicious": true, "scenario": "encoded command without a covered indicator"}
+  ]
+}

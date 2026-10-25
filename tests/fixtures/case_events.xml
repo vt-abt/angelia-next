@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>1</EventID><EventRecordID>101</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:00.0000000Z"/></System>
+    <EventData>
+      <Data Name="ProcessGuid">{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}</Data>
+      <Data Name="ProcessId">4242</Data><Data Name="ParentProcessGuid">{bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb}</Data>
+      <Data Name="ParentProcessId">1000</Data><Data Name="Image">C:\Lab\demo.exe</Data>
+      <Data Name="CommandLine">demo.exe --exercise</Data><Data Name="Hashes">SHA256=deadbeef</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>3</EventID><EventRecordID>102</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:01.0000000Z"/></System>
+    <EventData>
+      <Data Name="ProcessGuid">{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}</Data>
+      <Data Name="ProcessId">4242</Data><Data Name="Image">C:\Lab\demo.exe</Data>
+      <Data Name="Protocol">tcp</Data><Data Name="SourceIp">10.0.0.2</Data><Data Name="SourcePort">50000</Data>
+      <Data Name="DestinationIp">203.0.113.9</Data><Data Name="DestinationPort">443</Data>
+    </EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>11</EventID><EventRecordID>103</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:02.0000000Z"/></System>
+    <EventData><Data Name="ProcessGuid">{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}</Data><Data Name="ProcessId">4242</Data><Data Name="TargetFilename">C:\Lab\output.bin</Data></EventData>
+  </Event>
+  <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+    <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>13</EventID><EventRecordID>104</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:03.0000000Z"/></System>
+    <EventData><Data Name="ProcessGuid">{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}</Data><Data Name="ProcessId">4242</Data><Data Name="TargetObject">HKCU\Software\Demo\Setting</Data></EventData>
+  </Event>
+</Events>

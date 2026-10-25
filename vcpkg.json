@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "angelia",
+  "version-string": "0.4.0",
+  "builtin-baseline": "0c2a9ace1964b818b15f7ae50ba1c42404918a7b",
+  "dependencies": [
+    "fmt",
+    "spdlog",
+    "gtest",
+    "benchmark",
+    "zydis",
+    "nlohmann-json",
+    "pugixml",
+    { "name": "krabsetw",  "platform": "windows" }
+  ]
+}

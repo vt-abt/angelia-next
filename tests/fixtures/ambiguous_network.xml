@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Events>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>3</EventID><EventRecordID>201</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:01.4000000Z"/></System>
+  <EventData>
+    <Data Name="ProcessGuid">{cccccccc-cccc-cccc-cccc-cccccccccccc}</Data>
+    <Data Name="ProcessId">9999</Data><Data Name="Image">C:\Lab\other.exe</Data>
+    <Data Name="Protocol">tcp</Data><Data Name="SourceIp">10.0.0.2</Data><Data Name="SourcePort">50000</Data>
+    <Data Name="DestinationIp">203.0.113.9</Data><Data Name="DestinationPort">443</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>3</EventID><EventRecordID>202</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:01.4900000Z"/></System>
+  <EventData>
+    <Data Name="ProcessGuid">{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}</Data>
+    <Data Name="ProcessId">4242</Data><Data Name="Image">C:\Lab\sample.exe</Data>
+    <Data Name="Protocol">tcp</Data><Data Name="SourceIp">10.0.0.2</Data><Data Name="SourcePort">50000</Data>
+    <Data Name="DestinationIp">203.0.113.9</Data><Data Name="DestinationPort">443</Data>
+  </EventData>
+</Event>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+  <System><Provider Name="Microsoft-Windows-Sysmon"/><EventID>3</EventID><EventRecordID>203</EventRecordID><TimeCreated SystemTime="2026-01-01T00:00:01.4800000Z"/></System>
+  <EventData>
+    <Data Name="ProcessGuid">{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}</Data>
+    <Data Name="ProcessId">4242</Data><Data Name="Image">C:\Lab\sample.exe</Data>
+    <Data Name="Protocol">tcp</Data><Data Name="SourceIp">10.0.0.2</Data><Data Name="SourcePort">50000</Data>
+    <Data Name="DestinationIp">203.0.113.9</Data><Data Name="DestinationPort">443</Data>
+  </EventData>
+</Event>
+</Events>

@@ -1,0 +1,18 @@
+{
+  "note": "Labeled corpus for the Stage 6 precision/recall harness. Paths are relative to the repo root or absolute. `label` is the binary target ('positive' == should be flagged suspicious by our pipeline; 'negative' == should not). `family` is per-row metadata for per-family breakdowns.",
+  "binaries": [
+    { "path": "build/default/bin/vuln_stack_off.exe",       "label": "positive", "family": "stack-strcpy", "mitigation": "off"   },
+    { "path": "build/default/bin/vuln_stack_gs.exe",        "label": "positive", "family": "stack-strcpy", "mitigation": "gs"    },
+    { "path": "build/default/bin/vuln_stack_full.exe",      "label": "positive", "family": "stack-strcpy", "mitigation": "full"  },
+    { "path": "build/default/bin/vuln_heap_off.exe",        "label": "positive", "family": "heap-oob",     "mitigation": "off"   },
+    { "path": "build/default/bin/vuln_heap_gs.exe",         "label": "positive", "family": "heap-oob",     "mitigation": "gs"    },
+    { "path": "build/default/bin/vuln_heap_full.exe",       "label": "positive", "family": "heap-oob",     "mitigation": "full"  },
+    { "path": "build/default/bin/test_injection_triad.exe", "label": "positive", "family": "injection",    "mitigation": "n/a"   },
+    { "path": "build/default/bin/angelia.exe",              "label": "negative", "family": "project-tool", "mitigation": "full"  },
+    { "path": "build/default/bin/common_tests.exe",         "label": "negative", "family": "project-tool", "mitigation": "full"  },
+    { "path": "C:/Windows/System32/notepad.exe",            "label": "negative", "family": "os-shipping",  "mitigation": "full"  },
+    { "path": "C:/Windows/System32/cmd.exe",                "label": "negative", "family": "os-shipping",  "mitigation": "full"  },
+    { "path": "C:/Windows/System32/calc.exe",               "label": "negative", "family": "os-shipping",  "mitigation": "full"  },
+    { "path": "C:/Windows/System32/lsass.exe",              "label": "negative", "family": "os-shipping",  "mitigation": "full"  }
+  ]
+}

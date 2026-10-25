@@ -1,0 +1,70 @@
+# Build outputs
+build/
+build-*/
+out/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# CMake / Ninja
+CMakeCache.txt
+CMakeFiles/
+CMakeUserPresets.json
+cmake_install.cmake
+Testing/
+compile_commands.json
+_deps/
+
+# vcpkg — the entire bootstrap tree is derived, don't track it as an
+# embedded git repo. `cmake/build.ps1` re-clones on a fresh checkout.
+third_party/vcpkg/
+vcpkg_installed/
+
+# Local scheduler lock and other .claude session state
+.claude/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Local runtime artefacts
+*.etl
+*.dmp
+*.db
+*.db-wal
+*.db-shm
+*.evtx
+*.pcap
+*.pcapng
+*.py[cod]
+__pycache__/
+.env
+.env.*
+!.env.example
+runs/
+scratch/
+# Ad-hoc demo outputs at repo root (system-specific PII: live process
+# names, PIDs, personal usernames). Keep them out of history.
+/live.json
+/inventory.json
+/report*.html
+/stage1_smoke.db*
+/demo/
+/case_study/
+/cases/
+/eval_out/
+/dist/
+/tmp/
+/local_archive/
+
+# Generated output: retain the project PDF, exclude transient exports.
+/output/*
+!/output/pdf/
+/output/pdf/*
+!/output/pdf/Angelia_Technical_Project_Report.pdf
