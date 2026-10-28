@@ -1,6 +1,6 @@
 # Angelia
 
-Angelia is a local Windows investigation workbench. It collects live host activity or imports saved evidence into a case, keeps hashed copies of original sources, builds a process-centered timeline, records explainable findings, and exports a standalone HTML report.
+Angelia is a local Windows investigation workbench. It collects live host activity or imports saved evidence into a case, keeps hashed copies of original sources, builds a process-centered timeline, records explainable findings, and exports a standalone HTML report..
 
 The current release is **0.4.0** for Windows 10/11 x64. The [technical report](reports/ANGELIA_TECHNICAL_PROJECT_REPORT.md) describes the design and measured results; the [PDF version](output/pdf/Angelia_Technical_Project_Report.pdf) is ready to share.
 
