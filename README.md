@@ -73,6 +73,8 @@ Live collection uses Windows ETW and records both internal drop counters and ava
 
 The [validation record](docs/RELEASE_VALIDATION.md), [findings evaluation](docs/FINDINGS_VALIDATION.md), and [memory method](docs/MEMORY_VALIDATION.md) provide the exact checks and interpretation. See the technical report for the complete project assessment.
 
+Made with ❤️ by team gaejong.
+
 ## License
 
 Angelia project code is licensed under the [GNU Affero General Public License, version 3](LICENSE) (`AGPL-3.0-only`). Third-party components retain their own licenses.
